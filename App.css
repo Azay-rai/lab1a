@@ -1,0 +1,236 @@
+/* Apply background image and styling to the body */
+body {
+  background-image: url('./assets/1366X478-Blank.png'); /* Path to your background image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-attachment: fixed; /* Keep the background image fixed while scrolling */
+  margin: 0; /* Remove default margins */
+  font-family: 'Arial', sans-serif; /* Set a professional font */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+/* Style for Navbar */
+.navbar {
+  background-color: #f8f9fa !important; /* Light background color */
+  padding: 0.5rem 1rem; /* Padding for navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style for Navbar brand logo */
+.navbar-brand img {
+  height: 40px; /* Set the height for the logo */
+  object-fit: contain; /* Ensure the logo scales correctly */
+}
+
+/* Style for Buttons */
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border-color: #007bff; /* Border color */
+  font-size: 1.1rem; /* Slightly larger text */
+  padding: 0.75rem 1.5rem; /* Larger padding */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  border-color: #004085; /* Darker border on hover */
+}
+
+/* Style for Form Controls */
+.form-control {
+  border-radius: 0.25rem; /* Rounded corners for inputs */
+  border-color: #ced4da; /* Border color */
+}
+
+.form-control:focus {
+  border-color: #007bff; /* Border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Focus shadow */
+}
+
+/* Style for Navbar links and dropdowns */
+.nav-link, .nav-dropdown-item {
+  color: #333; /* Dark color for text */
+}
+
+.nav-link:hover, .nav-dropdown-item:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Style for Container */
+.container {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for content */
+  padding: 2rem; /* Padding for content */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style for Home Page */
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* Minimum height for full viewport visibility */
+  flex: 1; /* Allow the home page to grow and take available space */
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  text-align: left; /* Align text to the left */
+}
+
+.home-image {
+  width: 450px; /* Adjust width as needed */
+  height: 450px; /* Adjust height as needed */
+  overflow: hidden;
+  margin-right: 20px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond shape */
+}
+
+.home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-text {
+  max-width: 600px; /* Adjust text area width */
+}
+
+.home-text h2 {
+  font-size: 2.5rem; /* Larger font size for headings */
+  color: #333; /* Dark text color */
+  margin-bottom: 1rem; /* Space below heading */
+}
+
+.home-text .lead {
+  font-size: 1.2rem; /* Larger font size for lead paragraph */
+  color: #555; /* Slightly lighter text color */
+  margin-bottom: 1.5rem; /* Space below lead paragraph */
+}
+
+.home-text .btn {
+  margin: 0.5rem; /* Space between buttons */
+}
+
+/* About Page Styles */
+.about-page {
+  background-color: #f9f9f9; /* Light background for better contrast */
+  color: #333; /* Dark text color for readability */
+  padding: 2rem 4rem; /* Generous padding for content */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.about-page h2 {
+  color: #007bff; /* Primary color for headings */
+  font-size: 2.5rem; /* Larger font size for main heading */
+  margin-bottom: 1.5rem; /* Space below heading */
+  font-weight: 600; /* Bold heading */
+  text-align: center; /* Center align the heading */
+}
+
+.about-page .lead {
+  font-size: 1.2rem; /* Slightly larger font size for introductory text */
+  color: #555; /* Lighter color for lead text */
+  margin-bottom: 2rem; /* Space below introductory text */
+  text-align: center; /* Center align the lead text */
+}
+
+.about-page .row {
+  margin-top: 2rem; /* Space above the row */
+}
+
+.about-page .col-md-6 {
+  padding: 1rem; /* Padding inside columns */
+}
+
+.about-page h4 {
+  color: #007bff; /* Primary color for section headings */
+  font-size: 1.8rem; /* Larger font size for subsection headings */
+  margin-bottom: 1rem; /* Space below subsection headings */
+  font-weight: 500; /* Medium weight for subsection headings */
+}
+
+.info-box {
+  background-color: #fff; /* White background for boxes */
+  padding: 1.5rem; /* Padding inside the box */
+  border-radius: 0.5rem; /* Rounded corners for box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-bottom: 1.5rem; /* Space below each box */
+}
+
+.about-page p {
+  font-size: 1rem; /* Standard font size for paragraphs */
+  line-height: 1.6; /* Improved line height for readability */
+  margin-bottom: 1.5rem; /* Space below paragraphs */
+}
+
+.about-page ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.about-page li {
+  font-size: 1rem; /* Standard font size for list items */
+  margin-bottom: 0.75rem; /* Space between list items */
+}
+
+.about-page a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 500; /* Medium weight for links */
+}
+
+.about-page a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+hr.my-4 {
+  border: 0;
+  border-top: 1px solid #ddd; /* Light border color for the horizontal rule */
+  margin: 2rem 0; /* Space above and below the horizontal rule */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px; /* Ensure container width for large screens */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #ffffff; /* White background for the footer */
+  padding: 2rem 1rem; /* Generous padding */
+  text-align: center; /* Center the text */
+  border-top: 1px solid #ddd; /* Light border on top */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: auto; /* Push the footer to the bottom of the page */
+}
+
+.footer p {
+  margin: 0; /* Remove default margins */
+  color: #333; /* Dark text color */
+  font-size: 1rem; /* Standard font size */
+}
+
+.footer .btn {
+  margin: 0.5rem; /* Space between buttons */
+  border-radius: 0.25rem; /* Rounded corners for buttons */
+  padding: 0.5rem 1rem; /* Padding for buttons */
+}
+
+.footer a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 500; /* Medium weight for links */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
